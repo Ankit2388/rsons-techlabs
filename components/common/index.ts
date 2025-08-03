@@ -1,2 +1,2 @@
-export * from './ScrollProgress'
-export * from './Theme'
+export * from './ScrollProgress';
+export * from './Theme';
