@@ -9,17 +9,17 @@ import '@/public/assets/css/bootstrap-icons.css';
 import '@/public/assets/css/boxicons.min.css';
 import '@/public/assets/css/swiper-bundle.min.css';
 // import "react-modal-video/css/modal-video.css";
-import '@/public/assets/css/slick-theme.css';
 import '@/public/assets/css/animate.min.css';
-import '@/public/assets/css/slick.css';
 import '@/public/assets/css/bootstrap-datetimepicker.min.css';
+import '@/public/assets/css/slick-theme.css';
+import '@/public/assets/css/slick.css';
 // import "react-datepicker/dist/react-datepicker.css";
-import '@/public/assets/css/bootstrap.min.css';
-import 'yet-another-react-lightbox/styles.css';
-import '@/public/assets/css/style.css';
-import './globals.css';
+import { ScrollProgress, ThemeSwitch } from '@/components';
 import useWow from '@/hooks/useWow';
-import { ThemeSwitch, ScrollProgress } from '@/components';
+import '@/public/assets/css/bootstrap.min.css';
+import '@/public/assets/css/style.css';
+import 'yet-another-react-lightbox/styles.css';
+import './globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -41,6 +41,7 @@ export default function RootLayout({
   useWow();
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     require('bootstrap/dist/js/bootstrap.bundle.min.js');
   }, []);
 

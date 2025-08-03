@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { useEffect, useMemo, useReducer, useRef } from 'react';
+import { useEffect, useReducer, useRef } from 'react';
 import navData from '../../data/nav.json';
 import { ScrollProgress } from '../common';
 const initialState = {

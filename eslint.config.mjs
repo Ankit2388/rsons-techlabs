@@ -1,7 +1,8 @@
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
+/* eslint-disable import/order */
 import { FlatCompat } from '@eslint/eslintrc';
 import importPlugin from 'eslint-plugin-import';
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -17,6 +18,7 @@ const eslintConfig = [
       import: importPlugin,
     },
     rules: {
+      '@typescript-eslint/no-require-imports': 'error',
       'import/order': [
         'error',
         {
@@ -45,6 +47,9 @@ const eslintConfig = [
         },
       ],
     },
+  },
+  {
+    ignores: ['**/node_modules/**', '**/.next/**', '**/dist/**', '**/scripts/**', '**/*.config.js'],
   },
 ];
 
