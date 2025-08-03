@@ -1,4 +1,4 @@
-import { Header1 } from '@/components';
+import { Header1, Home1Banner } from '@/components';
 
 export const metadata = {
   icons: {
@@ -9,6 +9,7 @@ export default function Home() {
   return (
     <>
       <Header1 />
+      <Home1Banner />
       {/* <Home1Banner />
       <Home1BannerMarquee />
       <Home1About />
