@@ -20,8 +20,7 @@ import "yet-another-react-lightbox/styles.css";
 import "@/public/assets/css/style.css";
 import "./globals.css";
 import useWow from '@/hooks/useWow'
-import ScrollProgress from "@/components/common/ScrollProgress";
-import ThemeSwitch from "@/components/common/Theme";
+import {ThemeSwitch, ScrollProgress} from "@/components";
 
 
 const inter = Inter({

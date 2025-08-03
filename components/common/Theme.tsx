@@ -1,6 +1,7 @@
+'use client'
 import { useState, useEffect } from "react";
 
-const ThemeSwitch = () => {
+export const ThemeSwitch = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
@@ -35,4 +36,3 @@ const ThemeSwitch = () => {
   );
 };
 
-export default ThemeSwitch;

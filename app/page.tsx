@@ -1,4 +1,4 @@
-import Header1 from "@/components/header/Header1";
+import {Header1} from "@/components";
 
 export const metadata = {
   icons: {

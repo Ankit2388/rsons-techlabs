@@ -54,7 +54,7 @@ function reducer(state, action) {
   }
 }
 
-const Header2 = () => {
+export const Header2 = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const headerRef = useRef(null);
 
@@ -1052,4 +1052,3 @@ const Header2 = () => {
   );
 };
 
-export default Header2;

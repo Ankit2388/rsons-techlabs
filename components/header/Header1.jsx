@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useEffect, useMemo, useReducer, useRef } from "react";
 import navData from "../../data/nav.json";
-import ScrollProgress from "../common/ScrollProgress";
+import {ScrollProgress} from '../common'
 const initialState = {
   activeMenu: "",
   activeSubMenu: "",
@@ -55,7 +55,7 @@ function reducer(state, action) {
   }
 }
 
-const Header1 = () => {
+export const Header1 = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const headerRef = useRef(null);
 
@@ -1075,4 +1075,3 @@ const Header1 = () => {
   );
 };
 
-export default Header1;

@@ -1,6 +1,7 @@
+'use client'
 import React, { useState, useEffect } from "react";
 
-const ScrollProgress = () => {
+export const ScrollProgress = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -44,4 +45,3 @@ const ScrollProgress = () => {
   );
 };
 
-export default ScrollProgress;
