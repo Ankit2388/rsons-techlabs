@@ -1,10 +1,10 @@
-import Header1 from "@/components/header/Header1";
+import { Header1 } from '@/components';
 
 export const metadata = {
   icons: {
-    icon: "/assets/img/sm-logo.svg",
+    icon: '/assets/img/sm-logo.svg',
   },
-}
+};
 export default function Home() {
   return (
     <>

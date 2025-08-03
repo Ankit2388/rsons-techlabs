@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 const useWow = () => {
   useEffect(() => {
     const initWow = () => {
-      import('wowjs').then((module) => {
+      import('wowjs').then(module => {
         const WOW = module.default;
         const wow = new WOW.WOW({
           boxClass: 'wow',

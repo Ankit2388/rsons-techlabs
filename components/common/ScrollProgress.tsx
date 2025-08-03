@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+'use client';
+import React, { useState, useEffect } from 'react';
 
-const ScrollProgress = () => {
+export const ScrollProgress = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -13,35 +14,29 @@ const ScrollProgress = () => {
       }
     };
 
-    window.addEventListener("scroll", toggleVisible);
+    window.addEventListener('scroll', toggleVisible);
 
     return () => {
-      window.removeEventListener("scroll", toggleVisible);
+      window.removeEventListener('scroll', toggleVisible);
     };
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
+      behavior: 'smooth',
     });
   };
 
   return (
-    <div
-      className={`circle-container ${visible ? "active" : ""}`}
-      onClick={scrollToTop}
-    >
+    <div className={`circle-container ${visible ? 'active' : ''}`} onClick={scrollToTop}>
       <svg
         className="circle-progress svg-content"
         width="100%"
         height="100%"
-        viewBox="-1 -1 102 102"
-      >
+        viewBox="-1 -1 102 102">
         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
       </svg>
     </div>
   );
 };
-
-export default ScrollProgress;
